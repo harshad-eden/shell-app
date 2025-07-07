@@ -5,8 +5,6 @@ import federation from "@originjs/vite-plugin-federation";
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
 
-  console.log("env-----", env.VITE_PRODUCT_CONFIG_URL);
-
   return {
     plugins: [
       react(),
