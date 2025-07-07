@@ -11,7 +11,7 @@ const RemoteProductConfig = lazy(() =>
           </h2>
           <p className="text-red-600 mb-4">
             The Product Configuration portal is not available. Please make sure
-            it's running on port 3004.
+            it's running on port 3003.
           </p>
           <a
             href="http://localhost:3003"
