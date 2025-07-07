@@ -23,6 +23,23 @@ export default function Dashboard() {
     },
   ];
 
+  localStorage.setItem(
+    "loggedInUser",
+    JSON.stringify({
+      name: "John Doe",
+      email: "john.doe@example.com",
+      role: "admin",
+      portals: [
+        {
+          name: "Sales Portal",
+          description: "CRM, quotes, and policy management",
+          href: "/sales",
+          icon: "🎯",
+        },
+      ],
+    })
+  );
+
   return (
     <div className="p-6">
       {/* Main Dashboard Banner */}
@@ -40,7 +57,8 @@ export default function Dashboard() {
           Insurance Platform Dashboard
         </h1>
         <p className="text-lg text-gray-600">
-          Welcome to your insurance management platform. Choose a portal to get started.
+          Welcome to your insurance management platform. Choose a portal to get
+          started.
         </p>
       </div>
 
