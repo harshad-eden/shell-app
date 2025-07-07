@@ -8,9 +8,9 @@ export default defineConfig({
     federation({
       name: "shell",
       remotes: {
-        salesPortal: "http://localhost:3001/dist/assets/remoteEntry.js",
-        underwriterPortal: "http://localhost:3002/dist/assets/remoteEntry.js",
-        productConfig: "http://localhost:3003/dist/assets/remoteEntry.js",
+        salesPortal: "https://shell-sales-portal.vercel.app/assets/remoteEntry.js",
+        underwriterPortal: "https://shell-underwriter-portal.vercel.app/assets/remoteEntry.js",
+        productConfig: "https://shell-product-config.vercel.app/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),

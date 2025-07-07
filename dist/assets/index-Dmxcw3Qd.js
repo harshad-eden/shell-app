@@ -142,9 +142,9 @@ function Dashboard() {
 }
 
 const remotesMap = {
-'salesPortal':{url:'http://localhost:3001/dist/assets/remoteEntry.js',format:'esm',from:'vite'},
-  'underwriterPortal':{url:'http://localhost:3002/dist/assets/remoteEntry.js',format:'esm',from:'vite'},
-  'productConfig':{url:'http://localhost:3003/dist/assets/remoteEntry.js',format:'esm',from:'vite'}
+'salesPortal':{url:'https://shell-sales-portal.vercel.app/assets/remoteEntry.js',format:'esm',from:'vite'},
+  'underwriterPortal':{url:'https://shell-underwriter-portal.vercel.app/assets/remoteEntry.js',format:'esm',from:'vite'},
+  'productConfig':{url:'https://shell-product-config.vercel.app/assets/remoteEntry.js',format:'esm',from:'vite'}
 };
                 const currentImports = {};
                 const loadJS = async (url, fn) => {
